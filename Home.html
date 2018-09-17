@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="MyStyle.css">
+  <script src="MyJavascript.js">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Travel around the world</title>
+</head>
+
+<body>
+	
+	<!-- ########      NAVEGADOR SUPERIOR     ######### -->
+	<!-- Cogida de idea de W3S en bootstrap nav -->
+	
+	<nav id="myNav" class="navbar navbar-default">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<div class="navbar-brand" href="#">Travel around the world!</div>
+    		</div>
+    		<ul class="nav navbar-nav">
+      			<li id="active"><a href="Home.html">Home</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="opinion.html">Give us your opinion</a></li>
+   			</ul>
+  		</div>
+	</nav>
+	
+	<!-- ########      CONTENIDO     ######### -->
+	
+	<div class="jumbotron">TRAVEL AROUND THE WORLD! <br>
+	Where do you want to travel?</div>
+	
+	<center>
+		<div id="selectContinent" class="form-group">
+			<label for="Continent">Select a continent: </label><br>
+			<input id="myBtn" class="btn btn-info" type ="Submit" value="Europe" onClick="showTravels('Europe')">
+			<input class="btn btn-info" type ="Submit" value="North-America" onClick="showTravels('North-America')">
+			<input class="btn btn-info" type ="Submit" value="South-America" onClick="showTravels('South-America')">
+			<input class="btn btn-info" type ="Submit" value="Africa" onClick="showTravels('Africa')">
+			<input class="btn btn-info" type ="Submit" value="Asia" onClick="showTravels('Asia')">
+			<input class="btn btn-info" type ="Submit" value="Antarctica" onClick="showTravels('Antarctica')">
+			<input class="btn btn-info" type ="Submit" value="Australia" onClick="showTravels('Australia')">
+			</select>	
+		</div>	
+	</center>
+
+	<div>
+		<img id="map" src="mapamundi.png" class="img-fluid" alt="Responsive image">
+	</div>
+
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="selectedContinent"></div>
+  </div>
+</div>
+
+<br><br>
+	
+<footer id="myFooter" class="page-footer">Copyright Daniel Fradejas Pascual, 2018-2019, LDST</footer>
+
+</body>
+</html>
