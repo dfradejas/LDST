@@ -1,3 +1,6 @@
+
+//JAVASCRIPT PROVISIONAL ANTES DE TENER PHP Y BASES DE DATOS, PUES PONEMOS LOS DATOS A MANUBRIO
+
 function showTravels(place){
 	switch (place) {
 		case "Europe":

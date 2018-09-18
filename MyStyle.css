@@ -44,21 +44,21 @@ div {
 	padding: 10px;
 }
 
+/* ################################## SACADO DE W3S #################################### */
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none; /* Se encuentra oculto por defecto */
+    padding-top: 100px; /* Posición del modal */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Habilito scroll si se necesita, si no no se utiliza */
+    background-color: rgb(0,0,0); /* Color de fondo */
+    background-color: rgba(0,0,0,0.4); /* Opacidad de la pagina html de debajo del modal */
 }
 
-/* Modal Content */
+/*Contenido del modal*/
 .modal-content {
     background-color: #fefefe;
     margin: auto;
@@ -67,7 +67,7 @@ div {
     width: 80%;
 }
 
-/* The Close Button */
+/* El boton de cerrar */
 .close {
     color: #aaaaaa;
     float: right;
@@ -81,6 +81,8 @@ div {
     text-decoration: none;
     cursor: pointer;
 }
+
+/* ########################################################################################### */
 
 #link {
     padding: 30px;
@@ -97,6 +99,7 @@ div {
   height: 50px;
 }
 
+/* ############# SACADO DE INSPECCIONAR CODIGO FUENTE EN VALORACION DE ESTRELLAS ############### */
 #form p {
   text-align: center;
 }
@@ -129,3 +132,5 @@ label:hover ~ label {
 input[type="radio"]:checked ~ label {
   color: orange;
 }
+
+/* ########################################################################################### */

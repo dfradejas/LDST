@@ -1,17 +1,23 @@
 <!doctype html>
 <html>
 <head>
+
+  <!-- He usado bootstrap y lo he modificado a mi gusto con mi propia hoja de css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="MyStyle.css">
-  <script src="MyJavascript.js">
+
+  <!-- He utilizado jquery y scripts de bootstrap y también he añadido algunos con mi propio fichero javascript -->
+  <script src="MyJavascript.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <meta charset="UTF-8">
+
   <title>Travel around the world</title>
+
 </head>
 
 <body>
-	
 	<!-- ########      NAVEGADOR SUPERIOR     ######### -->
 	<!-- Cogida de idea de W3S en bootstrap nav -->
 	
@@ -30,9 +36,12 @@
 	
 	<!-- ########      CONTENIDO     ######### -->
 	
+	<!-- Titulo de la pagina -->
 	<div class="jumbotron">TRAVEL AROUND THE WORLD! <br>
 	Where do you want to travel?</div>
 	
+	<!-- Grupo de botones en lo que seleccionar el continente a viajar. En expectativas de futuro es crear una imagen interactiva
+		donde se pueda seleccionar el continente tan solo clickeando sobre el -->
 	<center>
 		<div id="selectContinent" class="form-group">
 			<h3>Select a continent: </h3><br>
@@ -47,21 +56,24 @@
 		</div>	
 	</center>
 
+	<!-- Imagen que en futuro quiero que sea interactiva -->
 	<div>
 		<img id="map" src="mapamundi.png" class="img-fluid" alt="Responsive image">
 	</div>
 
+	<!-- Modal que se genera por javascript cuando se clickea sobre un boton o continente -->
+	<div id="myModal" class="modal">
+  		<div class="modal-content">
+    		<span class="close">&times;</span>
+    			<div id="selectedContinent"></div>
+  		</div>
+	</div>
 
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <div id="selectedContinent"></div>
-  </div>
-</div>
-
-<br><br>
+	<br><br>
 	
-<footer id="myFooter" class="page-footer">Copyright Daniel Fradejas Pascual, 2018-2019, LDST</footer>
+	<!-- Pie de pagina donde indico nombre del creador, año y asignatura -->
+	<footer id="myFooter" class="page-footer">Copyright Daniel Fradejas Pascual, 2018-2019, LDST</footer>
 
 </body>
+
 </html>
