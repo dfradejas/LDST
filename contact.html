@@ -36,7 +36,36 @@
 	</nav>
 	
 	<!-- ########      CONTENIDO     ######### -->
-  <div class="jumbotron">Contact</div>
+  <div class="jumbotron">Contact us</div>
+
+  <center>
+   <form action="mail.php" method="post">
+    <div style="width:50%;">
+
+         <!--Body-->
+        <div>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Name and surname" required>
+        </div>
+
+        <div>
+            <input type="email" class="form-control" id="nombre" name="email" placeholder="example@gmail.com" required>
+        </div>
+
+        <div>
+            <textarea class="form-control" placeholder="Message..." required></textarea>
+        </div>
+
+        <div>
+          <input type="submit" value="Send" class="btn btn-info btn-block">
+        </div>
+
+    </div>
+
+   </form>
+
+   <br><br>
+  </center>
+
   <!-- Pie de pagina donde indico nombre del creador, año y asignatura -->
   <footer id="myFooter" class="page-footer">Copyright Daniel Fradejas Pascual, 2018-2019, LDST</footer>
 </body>
