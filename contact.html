@@ -22,7 +22,8 @@
 	<!-- ########      NAVEGADOR SUPERIOR     ######### -->
 	<!-- Cogida de idea de W3S en bootstrap nav -->
 	
-	<nav id="myNav" class="navbar navbar-default">
+  <div id="navigator">
+	 <nav id="myNav" class="navbar navbar-default">
   		<div class="container-fluid">
     		<div class="navbar-header">
       			<div class="navbar-brand" href="#">Travel around the world!</div>
@@ -33,12 +34,16 @@
 				  <li><a href="opinion.html">Give us your opinion</a></li>
    			</ul>
   		</div>
-	</nav>
-	
+	 </nav>
+	</div>
 	<!-- ########      CONTENIDO     ######### -->
-  <div class="jumbotron">Contact us</div>
 
+  <div id="header">
+   <div class="jumbotron">Contact us</div>
+  </div>
   <!-- Mensaje por correo a mi -->
+
+  <div id="content">
   <center>
    <form action="mail.php" method="post">
     <div style="width:50%;">
@@ -68,8 +73,10 @@
  </div>
 
   </center>
-
+</div>
   <!-- Pie de pagina donde indico nombre del creador, año y asignatura -->
+<div id="foot">
   <footer id="myFooter" class="page-footer">Copyright Daniel Fradejas Pascual, 2018-2019, LDST</footer>
+</div>
 </body>
 </html>

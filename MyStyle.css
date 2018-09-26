@@ -1,6 +1,21 @@
 @charset "UTF-8";
 /* CSS Document */
 
+.navigator { grid-area: navigator; }
+.header { grid-area: header; }
+.content { grid-area: content; }
+.foot { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'navigator'
+    'header'
+    'content'
+    'footer';
+  grid-gap: 10px;
+}
+
 #myNav {
 	background-color: aqua;
 	font-weight: bolder;
@@ -94,18 +109,14 @@ div {
 }
 
 #form {
-  width: 250px;
+  width: 50%;
   margin: 0 auto;
-  height: 50px;
+  height: 20%;
 }
 
 /* ############# SACADO DE INSPECCIONAR CODIGO FUENTE EN VALORACION DE ESTRELLAS ############### */
 #form p {
   text-align: center;
-}
-
-#form label {
-  font-size: 1000px;
 }
 
 input[type="radio"] {
@@ -114,9 +125,8 @@ input[type="radio"] {
 
 label {
   color: grey;
-  width: 20px;
-  font-size: 30px;
-  padding: 15px;
+  width: 10%;
+  padding: 5%;
 }
 
 .clasificacion {
