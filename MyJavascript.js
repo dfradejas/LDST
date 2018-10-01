@@ -7,7 +7,7 @@ function showTravels(place){
 			var modal = document.getElementById('myModal');
 			var btn = document.getElementById("myBtn");
 			var span = document.getElementsByClassName("close")[0];
-			var selectedContinent = document.getElementById("selectedContinent").innerHTML = " \
+			var text = " \
 			<center><h2>TOP 5 travels</h2></center> \
 			<table class='table'> \
 			<tr> \
@@ -32,23 +32,13 @@ function showTravels(place){
 			<td><a class='btn btn-default' href='https://en.wikipedia.org/wiki/Copenhague' target='_blank'>Info</a></td> \
 			<td><a class='btn btn-info' href='order-it.html'>Order it</a></td></tr> \
 			</tr></table>";
-			modal.style.display = "block";
-			span.onclick = function() {
-			    modal.style.display = "none";
-			}
-
-			window.onclick = function(event) {
-			    if (event.target == modal) {
-			        modal.style.display = "none";
-		 	   }
-			}
 			break;
 
 		case "North-America":
 			var modal = document.getElementById('myModal');
 			var btn = document.getElementById("myBtn");
 			var span = document.getElementsByClassName("close")[0];
-			var selectedContinent = document.getElementById("selectedContinent").innerHTML = " \
+			var text = " \
 			<center><h2>TOP 5 travels</h2></center> \
 			<table class='table'> \
 			<tr> \
@@ -73,23 +63,13 @@ function showTravels(place){
 			<td><a class='btn btn-default' href='https://en.wikipedia.org/wiki/Floreda' target='_blank'>Info</a></td> \
 			<td><a class='btn btn-info' href='order-it.html'>Order it</a></td></tr> \
 			</table>";
-			modal.style.display = "block";
-			span.onclick = function() {
-			    modal.style.display = "none";
-			}
-
-			window.onclick = function(event) {
-			    if (event.target == modal) {
-			        modal.style.display = "none";
-		 	   }
-			}
 			break;
 
 		case "South-America":
 			var modal = document.getElementById('myModal');
 			var btn = document.getElementById("myBtn");
 			var span = document.getElementsByClassName("close")[0];
-			var selectedContinent = document.getElementById("selectedContinent").innerHTML = " \
+			var text = " \
 			<center><h2>TOP 5 travels</h2></center> \
 			<table class='table'> \
 			<tr> \
@@ -114,23 +94,13 @@ function showTravels(place){
 			<td><a class='btn btn-default' href='https://en.wikipedia.org/wiki/Chile' target='_blank'>Info</a></td> \
 			<td><a class='btn btn-info' href='order-it.html'>Order it</a></td></tr> \
 			</table>";
-			modal.style.display = "block";
-			span.onclick = function() {
-			    modal.style.display = "none";
-			}
-
-			window.onclick = function(event) {
-			    if (event.target == modal) {
-			        modal.style.display = "none";
-		 	   }
-			}
 			break;
 
 		case "Africa":
 			var modal = document.getElementById('myModal');
 			var btn = document.getElementById("myBtn");
 			var span = document.getElementsByClassName("close")[0];
-			var selectedContinent = document.getElementById("selectedContinent").innerHTML = " \
+			var text = " \
 			<center><h2>TOP 5 travels</h2></center> \
 			<table class='table'> \
 			<tr> \
@@ -155,23 +125,13 @@ function showTravels(place){
 			<td><a class='btn btn-default' href='https://en.wikipedia.org/wiki/Kenya' target='_blank'>Info</a></td> \
 			<td><a class='btn btn-info' href='order-it.html'>Order it</a></td></tr> \
 			</table>";
-			modal.style.display = "block";
-			span.onclick = function() {
-			    modal.style.display = "none";
-			}
-
-			window.onclick = function(event) {
-			    if (event.target == modal) {
-			        modal.style.display = "none";
-		 	   }
-			}
 			break;
 
 		case "Asia":
 			var modal = document.getElementById('myModal');
 			var btn = document.getElementById("myBtn");
 			var span = document.getElementsByClassName("close")[0];
-			var selectedContinent = document.getElementById("selectedContinent").innerHTML = " \
+			var text = " \
 			<center><h2>TOP 5 travels</h2></center> \
 			<table class='table'> \
 			<tr> \
@@ -196,23 +156,13 @@ function showTravels(place){
 			<td><a class='btn btn-default' href='https://en.wikipedia.org/wiki/Israel' target='_blank'>Info</a></td> \
 			<td><a class='btn btn-info' href='order-it.html'>Order it</a></td></tr> \
 			</table>";
-			modal.style.display = "block";
-			span.onclick = function() {
-			    modal.style.display = "none";
-			}
-
-			window.onclick = function(event) {
-			    if (event.target == modal) {
-			        modal.style.display = "none";
-		 	   }
-			}
 			break;
 
 		case "Antarctica":
 			var modal = document.getElementById('myModal');
 			var btn = document.getElementById("myBtn");
 			var span = document.getElementsByClassName("close")[0];
-			var selectedContinent = document.getElementById("selectedContinent").innerHTML = " \
+			var text = " \
 			<center><h2>TOP 5 travels</h2></center> \
 			<table class='table'> \
 			<tr> \
@@ -223,23 +173,13 @@ function showTravels(place){
 			<tr> \
 			<td>In progress</td> \
 			</table>";
-			modal.style.display = "block";
-			span.onclick = function() {
-			    modal.style.display = "none";
-			}
-
-			window.onclick = function(event) {
-			    if (event.target == modal) {
-			        modal.style.display = "none";
-		 	   }
-			}
 			break;
 
 		case "Australia":
 			var modal = document.getElementById('myModal');
 			var btn = document.getElementById("myBtn");
 			var span = document.getElementsByClassName("close")[0];
-			var selectedContinent = document.getElementById("selectedContinent").innerHTML = " \
+			var text = " \
 			<center><h2>TOP 5 travels</h2></center> \
 			<table class='table'> \
 			<tr> \
@@ -264,20 +204,22 @@ function showTravels(place){
 			<td><a class='btn btn-default' href='https://en.wikipedia.org/wiki/Brisbane' target='_blank'>Info</a></td> \
 			<td><a class='btn btn-info' href='order-it.html'>Order it</a></td></tr> \
 			</table>";
-			modal.style.display = "block";
-			span.onclick = function() {
-			    modal.style.display = "none";
-			}
-
-			window.onclick = function(event) {
-			    if (event.target == modal) {
-			        modal.style.display = "none";
-		 	   }
-			}
 			break;
 
 		default:
 			alert("Not valid continent");
 
+		
+	}
+	var selectedContinent = document.getElementById("selectedContinent").innerHTML = text;
+	modal.style.display = "block";
+	span.onclick = function() {
+	    modal.style.display = "none";
+	}
+
+	window.onclick = function(event) {
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	   }
 	}
 }
